@@ -1,1 +1,1 @@
-HOLA {{$name}}, los correos con gmail funcionan
+Hola {{$name}}, los correos con gmail funcionan
