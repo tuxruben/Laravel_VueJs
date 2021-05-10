@@ -1,2 +1,2 @@
 Hola {{$name}}, los correos con gmail funcionan
-<p>	</p>
+<p>	11111</p>
