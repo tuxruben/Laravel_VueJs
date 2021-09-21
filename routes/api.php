@@ -22,12 +22,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  Route::post('register', 'AuthController@register');
 Route::group([
 
-    'middleware' => 'api',
+    'middleware' => ['api','auth'],
     'prefix'     => 'auth',
 
 ], function ($router) {
 
-
+Route::post('notes', function () {
+    return request(['email', 'password']);
+});
     Route::post('logout', 'AuthController@logout');
     Route::post('refresh', 'AuthController@refresh');
     Route::post('me', 'AuthController@me');
